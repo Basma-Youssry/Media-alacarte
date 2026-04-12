@@ -1,0 +1,76 @@
+<header class="bg-black border-b border-[#1f1f1f] text-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <nav class="flex items-center justify-between h-20" aria-label="Main Navigation">
+
+            <!-- Logo -->
+            <a routerLink="/" class="flex items-center">
+                <img src="/assets/logo.png" alt="Media Alacarte Logo" class="h-10 w-auto object-contain" />
+            </a>
+
+            <!-- Desktop Links -->
+            <ul class="hidden md:flex items-center gap-8">
+                @for (link of navLinks; track link.path) {
+                <li>
+                    <a [routerLink]="link.path" routerLinkActive="text-[#ff2d75]" #rla="routerLinkActive"
+                        [attr.aria-current]="rla.isActive ? 'page' : null"
+                        class="relative text-sm font-medium transition-colors duration-300 hover:text-[#ff2d75]">
+                        {{ link.label }}
+
+                        <!-- underline -->
+                        <span class="absolute left-0 -bottom-2 h-[2px] w-full bg-[#ff2d75]
+                     scale-x-0 origin-left transition-transform duration-300"
+                            [class.scale-x-[25%]]="rla.isActive"></span>
+                    </a>
+                </li>
+                }
+            </ul>
+
+            <!-- Login Button -->
+            @if (showAuthButton) {
+            <a routerLink="/login" class="hidden md:inline-flex items-center justify-center
+               px-6 py-2 rounded-full text-sm font-semibold
+               bg-gradient-to-r from-[#ff2d75] to-[#ff5f9e]
+               hover:opacity-90 transition duration-300
+               focus:outline-none focus:ring-2 focus:ring-[#ff2d75]">
+                Login
+            </a>
+            }
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl" (click)="toggleMenu()" aria-label="Toggle navigation menu"
+                [attr.aria-expanded]="menuOpen" aria-controls="mobile-menu">
+                ☰
+            </button>
+
+        </nav>
+
+        <!-- Mobile Menu -->
+        @if (menuOpen) {
+        <div id="mobile-menu" class="md:hidden pb-4">
+            <ul class="flex flex-col gap-4 mt-4">
+
+                @for (link of navLinks; track link.path) {
+                <li>
+                    <a [routerLink]="link.path" routerLinkActive="text-[#ff2d75]" (click)="toggleMenu()"
+                        class="block text-sm transition-colors duration-300 hover:text-[#ff2d75]">
+                        {{ link.label }}
+                    </a>
+                </li>
+                }
+
+                @if (showAuthButton) {
+                <li>
+                    <a routerLink="/login" class="inline-block mt-2 px-5 py-2 rounded-full text-sm font-semibold
+                   bg-gradient-to-r from-[#ff2d75] to-[#ff5f9e]">
+                        Login
+                    </a>
+                </li>
+                }
+
+            </ul>
+        </div>
+        }
+
+    </div>
+</header>
