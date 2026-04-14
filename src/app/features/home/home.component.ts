@@ -7,7 +7,7 @@ import { ReservationComponent } from './components/reservation/reservation.compo
 
 @Component({
   selector: 'app-home',
-  imports: [ServiceComponent, SolutionsComponent, PrinciplesComponent, ReservationComponent],
+  imports: [ServiceComponent, SolutionsComponent, PrinciplesComponent, ReservationComponent, HeroComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

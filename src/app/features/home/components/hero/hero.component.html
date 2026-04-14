@@ -25,72 +25,75 @@
 
     </div>
 
-    
+
     <!--  IMAGE  -->
-<div class="mt-12 relative flex justify-center">
-  <div class="relative rounded-3xl overflow-hidden max-w-4xl w-full shadow-xl">
+    <div class="mt-12 relative flex justify-center">
+      <div class="relative rounded-3xl overflow-hidden max-w-4xl w-full shadow-xl"
+        style="clip-path: path('M95% 3.3% L96% 6% L95% 95% L92% 95% L92% 85% L90% 83% L75% 83% L72% 85% L72% 93% L70% 95% L5% 95% L4% 92% L4% 18% L5% 14% L32% 14% L32.9% 12% L31% 8% L30% 3% Z');">
 
-    <div class=" absolute left-3 top-0 flex justify-center mt-8">
-      <button
-        class="bg-gradient-to-r from-pink-500 to-red-500 hover:opacity-90 transition px-8 py-3 rounded-full text-white font-medium shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-500"
-      >
-        Start your journey!
-      </button>
+        <div class=" absolute left-0 top-[-20px] flex justify-center mt-8">
+          <button
+            class="bg-gradient-to-r text-[15px] from-pink-500 to-red-500 hover:opacity-90 transition px-14 py-5 cursor-pointer rounded-full text-white font-medium shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+            Start your journey!
+          </button>
+        </div>
+
+        <img src="/assets/herosection.png" alt="Business team celebrating success" class="w-full h-auto object-cover"
+          style="clip-path: polygon(
+    95% 3.3%, 
+    96% 6%, 
+    95% 95%, 
+    92% 95%, 
+    92% 85%, 
+    90% 83%, 
+    75% 83%, 
+    72% 85%, 
+    72% 93%, 
+    70% 95%, 
+    5% 95%, 
+    4% 92%, 
+    4% 18%, 
+    5% 14%, 
+    32% 14%, 
+    32.9% 12%, 
+    31% 8%, 
+    30% 3%
+  );" />
+
+
+        <button
+          class="absolute bottom-0 right-20 bg-black/80 backdrop-blur px-5 py-3 rounded-full text-sm border border-[#F92A3D] border-[1.5px] hover:border-pink-500 transition">
+          <i class="fa-regular fa-circle-play mr-2"></i>
+          Learn More
+        </button>
+
+      </div>
     </div>
 
-    <img
-      src="/assets/herosection.png"
-      alt="Business team celebrating success"
-      class="w-full h-auto object-cover"
-    />
 
-    <button
-      class="absolute bottom-4 right-4 bg-black/80 backdrop-blur px-5 py-2 rounded-full text-sm border border-gray-700 hover:border-pink-500 transition"
-    >
-      Learn More
-    </button>
 
-  </div>
-</div>
 
-<!-- RIBBONS -->
-<div class="absolute bottom-0 left-0 w-full">
+    <!-- RIBBONS -->
 
-  <div
-    class="bg-gradient-to-r from-pink-600 to-red-500 text-black text-sm py-2 transform -rotate-2 text-center font-medium"
-  >
-    We simplify media buying with smarter solutions for agencies and media owners!
-  </div>
-
-  <div
-    class="bg-gradient-to-r from-pink-500 to-red-400 text-black text-sm py-2 transform rotate-2 text-center font-medium"
-  >
-    Coming soon: Smarter media solutions for better execution, and measurable impact.
-  </div>
-
-</div>
-
-  </div>
-
-  <!--  RIBBONS (ANIMATED) -->
-  <div class="absolute bottom-0 left-0 w-full">
-
-    <div
-      class="bg-gradient-to-r from-pink-600 to-red-500 text-black text-sm py-2 transform -rotate-2 text-center font-medium"
-      [@fadeUp]="animationState"
-    >
-      We simplify media buying with smarter solutions for agencies and media owners!
+    <div>
+      <!-- <div class="h-screen w-full"></div> -->
+      <div id="section1" class="relative overflow-hidden flex flex-col items-center justify-center py-24">
+        <div class="absolute w-[102vw]">
+          <p id="section1-content-text-left-text1"
+            class="text-[13px] md:text-xl py-3 font-semibold text-black bg-gradient-to-r from-red-500 to-pink-600 text-center rotate-8 sm:rotate-6 lg:rotate-4">
+            We simplify media buying with smarter solutions for better execution, and measurable impact.</p>
+        </div>
+        <div class="absolute w-[102vw]">
+          <p id="section1-content-text-left-text2"
+            class="text-[13px] md:text-xl py-3 font-semibold text-black bg-gradient-to-r from-red-500 to-pink-600 text-center -rotate-8 sm:-rotate-6 lg:-rotate-4">
+            Coming soon: Smarter media solutions for agencies and media owners!</p>
+        </div>
+      </div>
+      <!-- <div class="h-screen w-full"></div> -->
     </div>
 
-    <div
-      class="bg-gradient-to-r from-pink-500 to-red-400 text-black text-sm py-2 transform rotate-2 text-center font-medium"
-      [@fadeUp]="animationState"
-    >
-      Coming soon: Smarter media solutions for better execution, and measurable impact.
-    </div>
 
   </div>
+
 
 </section>
-
-
