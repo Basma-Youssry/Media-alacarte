@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/Media-alacarte',
+  basePath: '/',
   allowedHosts: [],
   supportedLocales: {
   "en-US": ""

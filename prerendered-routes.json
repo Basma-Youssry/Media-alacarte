@@ -1,21 +1,21 @@
 {
   "routes": {
-    "/Media-alacarte": {},
-    "/Media-alacarte/about-us": {},
-    "/Media-alacarte/auth": {},
-    "/Media-alacarte/auth/login": {},
-    "/Media-alacarte/auth/register": {},
-    "/Media-alacarte/benefits": {},
-    "/Media-alacarte/blank": {},
-    "/Media-alacarte/blank/about-us": {},
-    "/Media-alacarte/blank/benefits": {},
-    "/Media-alacarte/blank/contact-us": {},
-    "/Media-alacarte/blank/features": {},
-    "/Media-alacarte/blank/platform": {},
-    "/Media-alacarte/blank/requestademo": {},
-    "/Media-alacarte/contact-us": {},
-    "/Media-alacarte/features": {},
-    "/Media-alacarte/platform": {},
-    "/Media-alacarte/requestademo": {}
+    "/": {},
+    "/about-us": {},
+    "/auth": {},
+    "/auth/login": {},
+    "/auth/register": {},
+    "/benefits": {},
+    "/blank": {},
+    "/blank/about-us": {},
+    "/blank/benefits": {},
+    "/blank/contact-us": {},
+    "/blank/features": {},
+    "/blank/platform": {},
+    "/blank/requestademo": {},
+    "/contact-us": {},
+    "/features": {},
+    "/platform": {},
+    "/requestademo": {}
   }
 }
