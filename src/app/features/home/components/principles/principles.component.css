@@ -1,0 +1,13 @@
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* نفس الحركة لكل العناصر */
+.float-soft {
+  animation: floatSoft 4s ease-in-out infinite;
+}
