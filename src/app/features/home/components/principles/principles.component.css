@@ -11,3 +11,7 @@
 .float-soft {
   animation: floatSoft 4s ease-in-out infinite;
 }
+
+#principlebg2 {
+  background-image: url('../../../../../../public/assets/principlebg2.png');
+}

@@ -2,8 +2,9 @@ import { Component, ElementRef } from '@angular/core';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { SplitText } from 'gsap/SplitText';
-
-gsap.registerPlugin(ScrollTrigger, SplitText);
+import { isPlatformBrowser } from '@angular/common';
+import { Inject, PLATFORM_ID } from '@angular/core';
+gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
@@ -57,14 +58,20 @@ export class HeroComponent {
   //   );
   // }
 
-  constructor(private el: ElementRef) {}
+  constructor(
+    private el: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
 
   ngAfterViewInit(): void {
-    this.initTimeline();
+    if (isPlatformBrowser(this.platformId)) {
+      this.initTimeline();
+    }
   }
 
   private initTimeline(): void {
     const section = this.el.nativeElement.querySelector('#section1');
+    if (!section) return;
 
     const tl = gsap.timeline({
       scrollTrigger: {
