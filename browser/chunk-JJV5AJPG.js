@@ -1,0 +1,1 @@
+import{Ga as n,Va as o,Wa as i,fb as s}from"./chunk-IYVLOKWO.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-benefits"]],decls:2,vars:0,template:function(e,f){e&1&&(o(0,"p"),s(1,"benefits works!"),i())},encapsulation:2})};export{p as BenefitsComponent};
