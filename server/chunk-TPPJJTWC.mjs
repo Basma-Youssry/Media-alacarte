@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{w as m}from"./chunk-YO5W65NW.mjs";import{Ga as o,Ua as t,Va as p,Wa as a,hb as i}from"./chunk-TZTM5Y4Q.mjs";import"./chunk-T55IDOPT.mjs";var s=class n{static \u0275fac=function(e){return new(e||n)};static \u0275cmp=o({type:n,selectors:[["app-not-found"]],decls:3,vars:0,template:function(e,f){e&1&&(a(0,"app-navbar"),t(1,"p"),i(2,"not-found works!"),p())},dependencies:[m],encapsulation:2})};export{s as NotFoundComponent};
